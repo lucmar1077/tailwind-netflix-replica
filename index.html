@@ -12,7 +12,7 @@
 <body>
 
     <nav class="flex justify-between items-center">
-        <img src="./images/netflix-logo.png" draggable="false">
+        <img src="./images/netflix-logo.png" draggable="false" class="cursor-pointer">
 
         <div class="hidden sm:flex">
             <button class="text-slate-50 py-2 px-5 rounded-sm border-2">English</button>
@@ -22,7 +22,7 @@
         <div class="sm:hidden pr-4">
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7">
                 </svg>
             </button>
         </div>
@@ -39,13 +39,17 @@
         <h3 class="text-2xl font-bold mb-8 mx-4
         text-center text-slate-50">Ready to watch? Enter your email to create or restart your membership.</h3>
 
-        <div class="flex justify-center">
-            <form>
-                <input placeholder="Email address" class="py-3 pr-20 pl-3 
-                rounded-l-sm">
+        <div class="flex justify-center px-4">
+            <form class="flex flex-col sm:flex-row w-full max-w-lg">
+                <input type="email" placeholder="Email address" 
+                class="py-2 px-4 w-full sm:flex-grow rounded-t-sm 
+                sm:rounded-l-sm sm:rounded-t-none text-black">
+                <button class="text-slate-50 py-2 px-6 bg-red-600 
+                rounded-b-sm sm:rounded-r-sm sm:rounded-b-none 
+                w-full sm:w-auto">Get started</button>
             </form>
-            <button class="text-slate-50 px-3 bg-red rounded-r-sm">Get started</button>
         </div>
+
     </section>
 
 </body>
