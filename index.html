@@ -12,25 +12,31 @@
 <body>
 
     <nav class="flex justify-between items-center">
-        <img src="./images/netflix-logo.png">
-        <div>
-            <button class="text-slate-50 py-2 px-5
-            rounded-sm border-2">English</button>
+        <img src="./images/netflix-logo.png" draggable="false">
 
-            <button class="text-slate-50 mx-6 py-2 px-5
-            rounded-sm bg-red">Sign In</button>
+        <div class="hidden sm:flex">
+            <button class="text-slate-50 py-2 px-5 rounded-sm border-2">English</button>
+            <button class="text-slate-50 mx-6 py-2 px-5 rounded-sm bg-red-600">Sign In</button>
+        </div>
+
+        <div class="sm:hidden pr-4">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
         </div>
     </nav>
 
     <section>
 
-        <h1 class="text-4xl font-bold mt-40
+        <h1 class="text-4xl font-bold md:mt-40 mt-12 mx-4
         text-center text-slate-50">Unlimited Movies, TV shows, and more.</h1>
 
-        <h3 class="text-2xl font-bold my-4
+        <h3 class="text-2xl font-bold my-4 mx-4
         text-center text-slate-50">Watch anywhere. Cancel anytime.</h3>
 
-        <h3 class="text-2xl font-bold mb-8
+        <h3 class="text-2xl font-bold mb-8 mx-4
         text-center text-slate-50">Ready to watch? Enter your email to create or restart your membership.</h3>
 
         <div class="flex justify-center">
